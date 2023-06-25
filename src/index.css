@@ -1,13 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: #ecf2f8;
+  font-family: "Barlow Semi Condensed", sans-serif !important;
+  color: #48556a !important;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.cama-bg {
+  background-image: url("./assets/bg-pattern-quotation.svg");
+  background-position: 83% 0%;
+  background-repeat: no-repeat;
+  mask-type: luminance;
+  background-size:24%;
+}
+.shadow-box{
+  box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.247378);
+} 
+
+@keyframes heads {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+@keyframes profile {
+  from{
+    transform: scale(0);
+  }
+  to{
+    transform: scale(1);
+  }
+}
+.animateProfile{
+  animation-name: profile;
+  animation-duration: 0.5s;
+}
+h4{
+  animation-name: heads;
+  animation-duration: 2s;
+}
+
+@media (max-width:1010px) {
+  .card-style {
+    width: 85%;
+    margin: 24px 7% !important;
+}
 }
