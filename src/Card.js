@@ -3,8 +3,8 @@ import React from 'react'
 const Card = ({title,text}) => {
   return (
     <div className='mt-4  '>
-     <h4 className='text-[20px]'>{title}</h4>
-     <p className='text-[13px] mt-5'>{text}</p>
+     <h4 className='lg:text-[20px] sm:text-[28px] leading-7'>{title}</h4>
+     <p className='lg:text-[13px] sm:text-[18px] sm:mt-2 lg:mt-5 leading-5'>{text}</p>
     </div>
   )
 }

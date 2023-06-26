@@ -12,8 +12,8 @@ function App() {
   return (
     <section className="lg:grid grid-cols-3 block sm:w-[1300px]   mx-auto h-screen items-center gap-4">
       <div className="col-span-2 ">
-        <div className="lg:grid  lg:grid-cols-3 lg:gap-4">
-          <div className="bg-[#733FC8] text-white  col-span-2 p-8 rounded-[8px] card-style  cama-bg lg:w-full    shadow-box hover:scale-105 hover:rotate-6 transition-all ">
+        <div className="lg:grid   lg:grid-cols-3 lg:gap-4">
+          <div className="bg-[#733FC8] text-white  col-span-2 py-8 px-5 rounded-[8px] card-style  cama-bg lg:w-full    shadow-box hover:scale-105 hover:rotate-6 transition-all ">
             <Profile  author={"Daniel Clifford"} image={Daniel} />
             <Card
               title={
@@ -50,7 +50,7 @@ function App() {
           </div>
         </div>
 
-        <div className="lg:grid block grid-cols-3 gap-4 mt-10">
+        <div className="lg:grid block grid-cols-3 lg:gap-4 mt-4">
           <div className="bg-[#ffffff]  p-8 rounded-[8px] shadow-box card-style hover:scale-105 hover:rotate-12 transition-all ">
             <Profile author={"Jeanette Harmon"} image={Jeanette} />
             <Card

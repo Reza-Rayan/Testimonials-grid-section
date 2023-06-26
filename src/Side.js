@@ -5,13 +5,13 @@ import Kira from './assets/image-kira.jpg'
 
 const Side = () => {
   return (
-    <aside className="bg-white h-full flex flex-col p-8 card-style w-[370px]  shadow-box rounded-[8px] md:hover:scale-105 md:hover:rotate-6 transition-all ">
+    <aside className="bg-white h-full flex flex-col px-8 py-4 card-style w-[370px]  shadow-box rounded-[8px] md:hover:scale-105 md:hover:rotate-6 transition-all ">
       <Profile author={"Kira Whittle"} image={Kira} />
-      <div className="mt-8">
+      <div className="mt-4">
         <h4 className="text-[20px] font-semibold md:pr-10">
           Such a life-changing experience. Highly recommended!
         </h4>
-        <p className="mt-8 mb-2 md:mr-10">
+        <p className="mt-2 md:mr-10">
           “ Before joining the bootcamp, I’ve never written a line of code. I
           needed some structure from professionals who can help me learn
           programming step by step. I was encouraged to enroll by a former
